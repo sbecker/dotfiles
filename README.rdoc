@@ -1,0 +1,14 @@
+= Scott Becker Dot Files
+
+These are config files to set up a system the way I like it.
+
+== Installation
+
+  git clone git://github.com/sbecker/dotfiles ~/.dotfiles
+  cd ~/.dotfiles
+  rake install
+
+== Environment
+
+Running on Mac OS X.
+
