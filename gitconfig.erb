@@ -1,0 +1,28 @@
+[color]
+	branch = auto
+	status = auto
+	diff = auto
+	ui = auto
+[user]
+	email = <%= print("Your Email for Git: "); STDOUT.flush; STDIN.gets.chomp %>
+	name = <%= print("Your Name for Git: "); STDOUT.flush; STDIN.gets.chomp %>
+[github]
+	user = <%= print("GitHub Username: "); STDOUT.flush; STDIN.gets.chomp %>
+	token = <%= print("GitHub API Token: "); STDOUT.flush; STDIN.gets.chomp %>
+[core]
+	autocrlf = input
+	safecrlf = true
+	excludesfile = <%= ENV['HOME'] %>/.gitignore
+	editor = mate
+[format]
+	pretty = %C(yellow)%h%Creset %s %C(red)(%an, %cr)%Creset
+[alias]
+	dc = diff --cached
+	ci = commit
+	st = status -s -b
+	co = checkout
+	unstage = reset HEAD
+	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%%an>%Creset' --abbrev-commit --date=relative
+	type = cat-file -t
+	dump = cat-file -p
