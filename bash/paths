@@ -1,0 +1,15 @@
+# Google App Engine PATH
+export PATH=~/Archive/Development/appengine/appengine-java-sdk/bin:$PATH
+
+# MySQL PATH
+export PATH=/usr/local/mysql/bin:$PATH
+
+# Node.js
+export PATH=$HOME/local/node/bin:$PATH
+
+# Postgres
+export PATH=/Library/PostgreSQL/8.4/bin:$PATH
+
+# Go
+export GOROOT=~/go
+export PATH=$GOROOT/bin:$PATH

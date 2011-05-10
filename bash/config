@@ -1,0 +1,12 @@
+### Colored directory listings
+export CLICOLOR=1
+export LSCOLORS=DxGxcxdxCxegedabagacad
+
+### Variables
+export EDITOR="/usr/bin/mate -w"
+export JAVA_HOME=`/usr/libexec/java_home`
+export JDK_HOME=`/usr/libexec/java_home`
+
+### For Jive, from https://brewspace.jiveland.com/docs/DOC-25492
+export MAVEN_OPTS="-Xmx2048m -Xms128m -XX:+UseConcMarkSweepGC -XX:+UseParNewGC"
+export ANT_OPTS=$MAVEN_OPTS
