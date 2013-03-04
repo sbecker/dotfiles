@@ -1,0 +1,13 @@
+# DNS
+alias hosts='subl /etc/hosts'
+alias khosts='subl ~/.ssh/known_hosts'
+alias fd='sudo dscacheutil -flushcache'
+
+# Common directories
+alias cdd='cd ~/dev'
+
+# Dotfiles
+alias dotfiles='subl ~/.dotfiles'
+alias dotfilesreload='source ~/.bash_profile'
+
+source ~/.custom_aliases
