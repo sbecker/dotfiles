@@ -3,6 +3,9 @@ alias hosts='subl /etc/hosts'
 alias khosts='subl ~/.ssh/known_hosts'
 alias fd='sudo dscacheutil -flushcache'
 
+# default file list
+alias ls='ls -lah'
+
 # Common directories
 alias cdd='cd ~/dev'
 
