@@ -1,4 +1,4 @@
 set blink-matching-paren on
 
-"\e[1;5C": forward-word
-"\e[1;5D": backward-word
+"\e[1;6D": backward-word
+"\e[1;6C": forward-word
