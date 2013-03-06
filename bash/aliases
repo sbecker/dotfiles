@@ -13,4 +13,8 @@ alias cdd='cd ~/dev'
 alias dotfiles='subl ~/.dotfiles'
 alias dotfilesreload='source ~/.bash_profile'
 
+# Get shit done
+alias gsdw='cd ~/dev/opensource/get-shit-done/ && ./get-shit-done work'
+alias gsdp='cd ~/dev/opensource/get-shit-done/ && ./get-shit-done play'
+
 source ~/.custom_aliases
