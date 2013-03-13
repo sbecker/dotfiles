@@ -1,0 +1,58 @@
+#!/bin/bash
+
+# Make sure we’re using the latest Homebrew
+brew update
+
+# Upgrade any already-installed formulae
+brew upgrade
+
+# Install more recent versions of some OS X tools
+brew tap homebrew/dupes
+
+brew install ack
+brew install apple-gcc42
+brew install autoconf
+brew install automake
+brew install bash
+brew install cmake
+brew install ctags
+brew install curl
+brew install freetype
+brew install gettext
+brew install git
+brew install heroku-toolbelt
+brew install imagemagick
+brew install jpeg
+brew install leiningen
+brew install libevent
+brew install libgpg-error
+brew install libksba
+brew install libpng
+brew install libtool
+brew install libxml2
+brew install libxslt
+brew install libyaml
+brew install openssl
+brew install ossp-uuid
+brew install pbzip2
+brew install percona-server
+brew install pidof
+brew install pkg-config
+brew install postgresql
+brew install pv
+brew install qt
+brew install readline
+brew install redis
+brew install sqlite
+brew install tmux
+brew install wkhtmltopdf
+
+# Change login shell to the homebrew-installed bash
+sudo dscl . -change $HOME UserShell /bin/bash /usr/local/bin/bash
+
+# If ^^^ has already been run once, it will throw this harmless error:
+#   <main> attribute status: eDSAttributeNotFound
+#   <dscl_cmd> DS Error: -14134 (eDSAttributeNotFound)
+
+# Remove outdated versions from the cellar
+brew cleanup
