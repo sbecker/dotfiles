@@ -1,0 +1,15 @@
+#!/bin/bash
+# vim: ft=sh
+
+packages=(
+coffee-script
+express
+generator-angular
+grunt-cli
+js2coffee
+jshint
+)
+
+for package in ${packages[@]} ; do
+  npm install $package -g
+done
