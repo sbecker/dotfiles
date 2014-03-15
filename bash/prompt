@@ -23,8 +23,10 @@ function parse_git_branch {
   git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e "s/* \(.*\)/(\1$(parse_git_dirty))/"
 }
 
+#$(hostname) $BLUE[$GREEN\w$WHITE\$(parse_git_branch)$BLUE]\
+
 PS1="\n${TITLEBAR}\
-$(hostname) $BLUE[$GREEN\w$WHITE\$(parse_git_branch)$BLUE]\
+$BLUE[$GREEN\w$WHITE\$(parse_git_branch)$BLUE]\
 $GREEN\n\$$WHITE "
 PS2='> '
 PS4='+ '
