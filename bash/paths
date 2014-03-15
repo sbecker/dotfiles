@@ -1,5 +1,23 @@
 # Add Home bin for misc stuff
 export PATH=$PATH:$HOME/bin
 
+# For Golang
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOPATH/bin
+
+# Temporary, for mercurial "hg" which gets installed under python bin:
+export PATH=$PATH:/usr/local/share/python
+
 [[ -s ~/.nvm/nvm.sh ]]      && source ~/.nvm/nvm.sh      # This loads NVM
-[[ -s ~/.rvm/scripts/rvm ]] && source ~/.rvm/scripts/rvm # Load RVM into a shell session *as a function*
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi # This loads RBENV
+# [[ -s ~/.rvm/scripts/rvm ]] && source ~/.rvm/scripts/rvm # Load RVM into a shell session *as a function*
+[[ -s ~/.digital_ocean ]]      && source ~/.digital_ocean      # This sets Digital Ocean API keys
+
+# Gradle, for the Javas
+GRADLE_HOME=~/dev/java/tools/gradle-1.8
+export GRADLE_HOME
+export PATH=$PATH:$GRADLE_HOME/bin
+
+# MongoDB
+export MONGO_PATH=/usr/local/mongodb
+export PATH=$PATH:$MONGO_PATH/bin
