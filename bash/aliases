@@ -17,4 +17,7 @@ alias dotfilesreload='source ~/.bash_profile'
 alias gsdw='cd ~/dev/opensource/get-shit-done/ && ./get-shit-done work'
 alias gsdp='cd ~/dev/opensource/get-shit-done/ && ./get-shit-done play'
 
+# Serve current directory on 9090
+alias serveit='ruby -run -e httpd . -p 9090'
+
 source ~/.custom_aliases
