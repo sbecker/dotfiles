@@ -3,7 +3,8 @@ export CLICOLOR=1
 export LSCOLORS=DxGxcxdxCxegedabagacad
 
 ### Variables
-export EDITOR="/usr/bin/mate -w"
+export EDITOR="~/bin/subl -w"
+export BETTER_ERRORS_EDITOR="~/bin/subl -w"
 export JAVA_HOME=`/usr/libexec/java_home`
 export JDK_HOME=`/usr/libexec/java_home`
 
